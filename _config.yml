@@ -8,11 +8,11 @@ first_name: Bowen
 last_name: Zhang
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Bowen Zhang, a third-year undergraduate at Shanghai University of Finance and Economics interested in machine learning.
+  Personal website of Bowen Zhang, a third-year undergraduate at Shanghai University of Finance and Economics interested in deep generative models and uncertainty quantification.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Bowen Zhang, Shanghai University of Finance and Economics, machine learning
+keywords: Bowen Zhang, Shanghai University of Finance and Economics, deep generative models, uncertainty quantification
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
@@ -354,8 +354,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Zhang]
+  first_name: [Bowen]
 
   style: apa
   locale: en
