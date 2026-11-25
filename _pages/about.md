@@ -27,3 +27,5 @@ latest_posts:
 Hi! I am **Bowen Zhang**, a third-year undergraduate student at **Shanghai University of Finance and Economics**.
 
 My research interests lie in **deep generative models** and **uncertainty quantification**.
+
+[**View publications**]({{ "/publications/" | relative_url }})
