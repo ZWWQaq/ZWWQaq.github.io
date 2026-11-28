@@ -1,0 +1,96 @@
+/* Only the about page loads this stylesheet. */
+.post {
+  --research-accent: #775172;
+  --research-rule: color-mix(in srgb, var(--research-accent) 38%, var(--global-bg-color));
+  --display-font: Baskerville, Georgia, serif;
+}
+
+html[data-theme="dark"] .post {
+  --research-accent: #9ac9d5;
+}
+
+.post-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-content: center;
+  column-gap: 2rem;
+  padding-block: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.post-header .post-title {
+  align-self: end;
+  margin: 0 0 0.75rem;
+  font: 400 clamp(3.5rem, 7vw, 5.75rem) / 1.02 var(--display-font);
+  letter-spacing: -0.045em;
+}
+
+.post-header .desc {
+  grid-column: 1;
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--global-text-color) 72%, var(--global-bg-color));
+}
+
+.post-header::after {
+  content: "";
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: center;
+  width: 100%;
+  aspect-ratio: 1.8;
+  background: var(--research-accent);
+  -webkit-mask: url("../img/density-ridges.png") center / contain no-repeat;
+  mask: url("../img/density-ridges.png") center / contain no-repeat;
+}
+
+.research-directions {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(1.75rem, 6vw, 4.5rem);
+  margin: 0 0 2.5rem;
+}
+
+.research-directions section {
+  border-top: 1px solid var(--research-rule);
+  padding-top: 1.25rem;
+}
+
+.research-directions h2 {
+  margin: 0 0 1rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--research-accent);
+}
+
+.research-directions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font: 400 clamp(1.5rem, 3vw, 2.125rem) / 1.35 var(--display-font);
+  letter-spacing: -0.02em;
+}
+
+.research-directions li + li {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 42rem) {
+  .post-header {
+    grid-template-columns: 1fr;
+    padding-block: 0 2rem;
+  }
+
+  .post-header::after {
+    grid-area: 1 / 1;
+    width: 9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .research-directions {
+    grid-template-columns: 1fr;
+  }
+}

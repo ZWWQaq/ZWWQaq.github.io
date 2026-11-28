@@ -2,13 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Third-year Undergraduate · Shanghai University of Finance and Economics
-
-profile:
-  align: right
-  image:
-  image_circular: false # crops the image to make it circular
-  more_info:
+subtitle: Third-year undergraduate<br>Shanghai University of Finance and Economics
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -24,6 +18,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am **Bowen Zhang**, a third-year undergraduate student at **Shanghai University of Finance and Economics**.
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
 
-My research interests lie in **deep generative models** and **uncertainty quantification**.
+<div class="research-directions">
+  <section aria-labelledby="research-interests">
+    <h2 id="research-interests">Research interests</h2>
+    <ul>
+      <li>Deep generative models</li>
+      <li>Uncertainty quantification</li>
+    </ul>
+  </section>
+  <section aria-labelledby="exploring">
+    <h2 id="exploring">Exploring</h2>
+    <ul>
+      <li>Long-horizon agents</li>
+      <li>Decision models</li>
+    </ul>
+  </section>
+</div>
